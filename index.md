@@ -66,7 +66,7 @@ Selected seminars, conferences, and summer schools attended.
 
 - [Arithmetic and Algebraic Geometry Bootcamp.](https://ashankar91.github.io/aag-bootcamp-2026/index.html) Northwestern University, Evanston, Illinois, August 17–21, 2026. [Notes](#abelian-finite-fields).
 
-- **Summer Workshop on Character Sheaves on Loop Groups.** Minneapolis, June 8–12, 2026.
+- [Summer Workshop on Character Sheaves on Loop Groups.](https://cse.umn.edu/math/events/summer-workshop-character-sheaves-loop-groups) Minneapolis, June 8–12, 2026.
 
 - [Directed Reading Program, Fall 2025.](https://wp.math.berkeley.edu/drp/2025/12/15/fall-2025-wrap-up/) UC Berkeley; mentored by [CJ Dowd](https://math.berkeley.edu/~cjdowd/). Studied the construction of de Rham and crystalline period rings. [Short wrap-up notes](#period-rings).
 
