@@ -52,7 +52,7 @@ Jump to:
 
 - **Oscillator semigroups over finite fields: irreducible representations and restrictions.** Working draft.
 
-  Motivated by Howe's classification and restriction problems, this manuscript studies oscillator centralizer semigroups over finite fields of odd characteristic. It parametrizes their irreducible representations by scalar characters, reduction defects, and representations of local classical groups. Restrictions to classical groups are realized as images of standard-module pairing operators and analyzed through Harish-Chandra induction and type-A and type-BC Hecke algebras. These constructions connect the semigroup classification with explicit restriction formulas and finite-field theta correspondence.
+  Motivated by Howe's classification and restriction problems, we study the irreducible representations of centralizer semigroups in the oscillator semigroup over finite fields of odd characteristic, together with their restrictions to classical groups. We realize these restrictions as images of standard-module pairing operators and analyze them using Harish-Chandra induction and Hecke algebras of types A and BC. These constructions yield explicit restriction formulas and connect the semigroup representations with finite-field theta correspondence.
 
 - **The oscillator semigroup approach to the Gurevich–Howe conjecture.** In preparation.
 
