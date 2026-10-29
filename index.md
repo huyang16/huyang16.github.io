@@ -52,11 +52,11 @@ Jump to:
 
 - **Oscillator semigroups over finite fields: irreducible representations and restrictions.** Working draft.
 
-  Motivated by Howe's classification and restriction problems, I study irreducible representations of oscillator centralizers over finite fields of odd characteristic and their restrictions to classical groups. The project combines finite semigroup representation theory, Harish-Chandra induction, and Hecke algebras to study representation parameters, restriction multiplicities, and their connection with the Howe correspondence over finite fields.
+  Motivated by Howe's classification and restriction problems, this manuscript studies oscillator centralizer semigroups over finite fields of odd characteristic. It parametrizes their irreducible representations by scalar characters, reduction defects, and representations of local classical groups. Restrictions to classical groups are realized as images of standard-module pairing operators and analyzed through Harish-Chandra induction and type-A and type-BC Hecke algebras. These constructions connect the semigroup classification with explicit restriction formulas and finite-field theta correspondence.
 
 - **The oscillator semigroup approach to the Gurevich–Howe conjecture.** In preparation.
 
-  This project explores an approach to the Gurevich–Howe conjecture using oscillator semigroups over finite fields.
+  This project develops an oscillator-semigroup approach to the Gurevich–Howe rank-agreement and exhaustion problems for finite symplectic groups. It compares the rank detected by Siegel unipotent characters with the smallest quadratic source in which a representation occurs in a Weil model. The draft identifies suitable corners of rank quotients of the symplectic group algebra with orthogonal group algebras, providing a route to rank agreement and exhaustion by the eta correspondence below maximal U-rank. It also relates semigroup defect to first occurrence in a fixed Witt tower.
 
 ---
 
