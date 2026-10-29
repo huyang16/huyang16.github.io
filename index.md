@@ -3,9 +3,9 @@ layout: home
 permalink: /
 title: "Yang Hu's Website"
 description: "Yang Hu's mathematics homepage: writings, research, and academic activities."
-email: hu000841@umn.edu
-cv: assets/Yang_Hu_CV_20261019_v3.pdf
-updated: October 19, 2026
+email: yanghumath2004@outlook.com
+cv: assets/Yang_Hu_CV.pdf
+updated: October 29, 2026
 ---
 
 # Yang Hu (胡洋)
@@ -13,9 +13,7 @@ updated: October 19, 2026
 <p class="contact">Email: <a href="mailto:{{ page.email | escape }}">{{ page.email | escape }}</a><br>
 <a href="{{ page.cv | relative_url }}">CV (PDF)</a></p>
 
-I am an undergraduate mathematics student at the [University of Minnesota Twin Cities](https://cse.umn.edu/math). I am interested in representation theory and its connections with number theory and geometry.
-
-I also keep a [blog](/blog/) with notes on what I am learning.
+I am interested in representation theory and its connections with number theory and geometry.
 
 <nav class="jump-to" aria-label="Page sections">
 Jump to:
@@ -68,10 +66,11 @@ Selected seminars, conferences, and summer schools, listed in reverse chronologi
 
 - [Arithmetic and Algebraic Geometry Bootcamp.](https://ashankar91.github.io/aag-bootcamp-2026/index.html) Northwestern University, Evanston, Illinois, August 17–21, 2026. [Notes](#abelian-finite-fields).
 
-- [Summer Workshop on Character Sheaves on Loop Groups.](https://cse.umn.edu/math/events/summer-workshop-character-sheaves-loop-groups) University of Minnesota Twin Cities, Minneapolis, Minnesota, June 8–12, 2026.
+- **Summer Workshop on Character Sheaves on Loop Groups.** Minneapolis, June 8–12, 2026.
 
 - [Directed Reading Program, Fall 2025.](https://wp.math.berkeley.edu/drp/2025/12/15/fall-2025-wrap-up/) UC Berkeley; mentored by [CJ Dowd](https://math.berkeley.edu/~cjdowd/). Studied the construction of de Rham and crystalline period rings. [Short wrap-up notes](#period-rings).
 
 - [2025 CAS Summer School.](https://math.pku.edu.cn/kxyj/xzky/165180.htm) Peking University. Lectures on algebraic geometry, number theory, and representation theory.
 
 - **Learning Seminar on Fourier Analysis, Fall 2024.** Southern University of Science and Technology. Presented Chapter 5 of Stein's *Fourier Analysis: An Introduction*.
+
