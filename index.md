@@ -11,7 +11,7 @@ updated: October 29, 2026
 # Yang Hu (胡洋)
 
 <p class="contact">Email: <a href="mailto:{{ page.email | escape }}">{{ page.email | escape }}</a><br>
-<a href="{{ page.cv | relative_url }}?v=3ca4b537b9ad">CV (PDF)</a></p>
+<a href="{{ page.cv | relative_url }}?v=ae1eaf07764a">CV (PDF)</a></p>
 
 I am interested in representation theory and its connections with number theory and geometry.
 
