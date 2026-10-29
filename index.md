@@ -32,7 +32,7 @@ Jump to:
 
 - {: #galois-representations} [On Galois representations.](https://drive.google.com/file/d/1xqiKAEn0mt98e3qUyMpAXlZIqb8mTxhA/view?usp=sharing) Term paper for Number Theory (MATH 254A) at UC Berkeley, under the guidance of Prof. Sug Woo Shin, Fall 2025.
 
-- [Abelian varieties and their moduli.](https://drive.google.com/file/d/19WjINI-4aaCx639PUqLD6tK76tP-QrwQ/view?usp=sharing) Course notes from Prof. Kai-Wen Lan's course.
+- [Abelian varieties and their moduli.](/assets/Abelian_Varieties_and_their_Moduli.pdf) Course notes from Prof. Kai-Wen Lan's course.
 
 - [The Weil representation over local fields.](https://drive.google.com/file/d/15ps-39MJoJIrPOxIXZXjAwctrbUXkaum/view?usp=sharing) Expository notes from reading with Prof. Dihua Jiang.
 
