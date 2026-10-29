@@ -8,7 +8,7 @@ cv: assets/Yang_Hu_CV.pdf
 updated: October 29, 2026
 ---
 
-# Yang Hu (胡洋)
+# Yang Hu (<span lang="zh-Hans" style="font-family: SimSun, 'Songti SC', STSong, 'Noto Serif CJK SC', serif; font-weight: normal;">胡洋</span>)
 
 <p class="contact">Email: <a href="mailto:{{ page.email | escape }}">{{ page.email | escape }}</a><br>
 <a href="{{ page.cv | relative_url }}?v=34c62c03291f">CV (PDF)</a></p>
