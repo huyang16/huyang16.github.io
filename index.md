@@ -34,6 +34,8 @@ Jump to:
 
 - [Abelian varieties and their moduli.](/assets/Abelian_Varieties_and_their_Moduli.pdf) Course notes from Prof. Kai-Wen Lan's course.
 
+- [Representation theory of reductive p-adic groups.](/assets/Reductive_p_adic_Groups.pdf) Notes taken during Prof. Dihua Jiang's topics course in spring 2026.
+
 - [The Weil representation over local fields.](https://drive.google.com/file/d/15ps-39MJoJIrPOxIXZXjAwctrbUXkaum/view?usp=sharing) Expository notes from reading with Prof. Dihua Jiang.
 
 - [A short note on surfaces of genus *g*.](https://drive.google.com/file/d/1Wo4fMI8DPvQZMl1S-3vxSZXcS78Mk0pv/view?usp=sharing) Expository notes on surface groups, period lattices, and the Abel–Jacobi map.
