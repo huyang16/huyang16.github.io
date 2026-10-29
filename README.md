@@ -1,6 +1,6 @@
 # Yang Hu — Academic Homepage
 
-主页：https://hu000841-math.github.io/
+主页：https://huyang16.github.io/
 
 ## 修改主页
 
@@ -18,8 +18,8 @@ Google Drive 分享链接也可以直接放入括号。保留 `{: #abelian-finit
 
 ## 更新 CV
 
-当前文件为 `assets/Yang_Hu_CV_20261019_v3.pdf`。上传新 PDF 后，修改 `index.md` 顶部的 `cv` 文件路径。
+当前文件为 `assets/Yang_Hu_CV.pdf`。上传新 PDF 后，修改 `index.md` 顶部的 `cv` 文件路径。
 
 ## 发布
 
-提交到 `main` 后，GitHub Pages 自动构建。发布进度在仓库 Actions 中查看。`blog/` 是现有博客，主页通过 `/blog/` 链接访问。
+提交到 `main` 后，GitHub Pages 自动构建。发布进度在仓库 Actions 中查看。
