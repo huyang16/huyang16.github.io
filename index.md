@@ -62,7 +62,7 @@ Jump to:
 
 ## Activities
 
-Selected seminars, conferences, and summer schools, listed in reverse chronological order.
+Selected seminars, conferences, and summer schools attended.
 
 - [Arithmetic and Algebraic Geometry Bootcamp.](https://ashankar91.github.io/aag-bootcamp-2026/index.html) Northwestern University, Evanston, Illinois, August 17–21, 2026. [Notes](#abelian-finite-fields).
 
