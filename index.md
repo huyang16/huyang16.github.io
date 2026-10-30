@@ -13,7 +13,7 @@ updated: October 29, 2026
 <p class="contact">Email: <a href="mailto:{{ page.email | escape }}">{{ page.email | escape }}</a><br>
 <a href="{{ page.cv | relative_url }}?v=f97b841f4bee">CV (PDF)</a></p>
 
-I am interested in representation theory and its connections with number theory and geometry.
+I am interested in representation theory and its connections with number theory and algebraic geometry.
 
 <nav class="jump-to" aria-label="Page sections">
 Jump to:
