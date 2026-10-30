@@ -5,7 +5,7 @@ title: "Yang Hu's Website"
 description: "Yang Hu's mathematics homepage: writings, research, and academic activities."
 email: yanghumath2004@outlook.com
 cv: assets/Yang_Hu_CV.pdf
-updated: October 29, 2026
+updated: October 30, 2026
 ---
 
 # Yang Hu (<span lang="zh-Hans" style="font-family: SimSun, 'Songti SC', STSong, 'Noto Serif CJK SC', serif; font-weight: normal;">胡洋</span>)
@@ -44,6 +44,8 @@ Jump to:
 - [A short note on surfaces of genus *g*.](https://drive.google.com/file/d/1Wo4fMI8DPvQZMl1S-3vxSZXcS78Mk0pv/view?usp=sharing) Expository notes on surface groups, period lattices, and the Abel–Jacobi map.
 
 - {: #period-rings} [Period rings.](https://drive.google.com/file/d/1C9g1qAAOBA9MCHdIpE2mCjM28UX_oNui/view?usp=sharing) Short wrap-up notes from the Berkeley Directed Reading Program, Fall 2025, on the construction of de Rham and crystalline period rings.
+
+- [A note on an interesting Lemma](/assets/Hartogs_Lemma_Completed.pdf)
 
 ### Resources
 
