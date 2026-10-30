@@ -12,6 +12,10 @@ updated: October 29, 2026
 
 <p class="contact">Email: <a href="mailto:{{ page.email | escape }}">{{ page.email | escape }}</a></p>
 
+## CV
+
+<a href="{{ page.cv | relative_url }}?v=aa62ff2fe678" style="font-style: normal;">This is my CV</a>
+
 I am interested in representation theory and its connections with number theory and algebraic geometry.
 
 <nav class="jump-to" aria-label="Page sections">
@@ -74,9 +78,3 @@ Selected seminars, conferences, and summer schools attended.
 - [2025 CAS Summer School.](https://math.pku.edu.cn/kxyj/xzky/165180.htm) Peking University. Lectures on algebraic geometry, number theory, and representation theory.
 
 - **Learning Seminar on Fourier Analysis, Fall 2024.** Southern University of Science and Technology. Presented Chapter 5 of Stein's *Fourier Analysis: An Introduction*.
-
----
-
-## CV
-
-<a href="{{ page.cv | relative_url }}?v=aa62ff2fe678" style="font-style: normal;">This is my CV</a>
