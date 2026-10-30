@@ -14,7 +14,7 @@ updated: October 29, 2026
 
 ## CV
 
-<a href="{{ page.cv | relative_url }}?v=aa62ff2fe678" style="font-style: normal;">This is my CV</a>
+<p style="font-style: normal;">This is my <a href="{{ page.cv | relative_url }}?v=aa62ff2fe678" style="font-style: normal; text-decoration: underline;">CV</a></p>
 
 I am interested in representation theory and its connections with number theory and algebraic geometry.
 
