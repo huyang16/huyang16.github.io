@@ -10,8 +10,7 @@ updated: October 29, 2026
 
 # Yang Hu (<span lang="zh-Hans" style="font-family: SimSun, 'Songti SC', STSong, 'Noto Serif CJK SC', serif; font-weight: normal;">胡洋</span>)
 
-<p class="contact">Email: <a href="mailto:{{ page.email | escape }}">{{ page.email | escape }}</a><br>
-<a href="{{ page.cv | relative_url }}?v=aa62ff2fe678" style="font-style: normal;">This is my CV</a></p>
+<p class="contact">Email: <a href="mailto:{{ page.email | escape }}">{{ page.email | escape }}</a></p>
 
 I am interested in representation theory and its connections with number theory and algebraic geometry.
 
@@ -76,3 +75,8 @@ Selected seminars, conferences, and summer schools attended.
 
 - **Learning Seminar on Fourier Analysis, Fall 2024.** Southern University of Science and Technology. Presented Chapter 5 of Stein's *Fourier Analysis: An Introduction*.
 
+---
+
+## CV
+
+<a href="{{ page.cv | relative_url }}?v=aa62ff2fe678" style="font-style: normal;">This is my CV</a>
