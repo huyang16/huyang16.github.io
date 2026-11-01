@@ -16,8 +16,6 @@ updated: October 30, 2026
 
 <p style="font-style: normal;">This is my <a href="{{ page.cv | relative_url }}?v=aa62ff2fe678" style="font-style: normal; text-decoration: underline;">CV</a></p>
 
-<p id="temporary-print"><a href="/assets/Temporary_Print_Protected.pdf">Temporary PDF for printing (password required)</a></p>
-
 I am interested in representation theory and its connections with number theory and algebraic geometry.
 
 <nav class="jump-to" aria-label="Page sections">
