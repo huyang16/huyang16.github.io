@@ -5,7 +5,7 @@ title: "Yang Hu's Website"
 description: "Yang Hu's mathematics homepage: writings, research, and academic activities."
 email: yanghumath2004@outlook.com
 cv: assets/Yang_Hu_CV.pdf
-updated: October 30, 2026
+updated: November 3, 2026
 ---
 
 # Yang Hu (<span lang="zh-Hans" style="font-family: SimSun, 'Songti SC', STSong, 'Noto Serif CJK SC', serif; font-weight: normal;">胡洋</span>)
@@ -41,7 +41,7 @@ Jump to:
 
 - [Notes on local theta correspondence.](/assets/Notes_on_Local_Theta_Correspondence.pdf) Expository notes from reading with Prof. Dihua Jiang.
 
-- [A short note on surfaces of genus *g*.](https://drive.google.com/file/d/1Wo4fMI8DPvQZMl1S-3vxSZXcS78Mk0pv/view?usp=sharing) Expository notes on surface groups, period lattices, and the Abel–Jacobi map.
+- [Jacobians and Abel–Jacobi maps.](/assets/Jacobians_and_Abel_Jacobi_Maps.pdf)
 
 - {: #period-rings} [Period rings.](https://drive.google.com/file/d/1C9g1qAAOBA9MCHdIpE2mCjM28UX_oNui/view?usp=sharing) Short wrap-up notes from the Berkeley Directed Reading Program, Fall 2025, on the construction of de Rham and crystalline period rings.
 

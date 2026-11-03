@@ -1,0 +1,551 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,
+  urlcolor=blue!45!black,pdftitle={Jacobians and Abel--Jacobi Maps}}
+\setlength{\emergencystretch}{2em}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\Z}{\mathbf Z}
+\newcommand{\R}{\mathbf R}
+\newcommand{\C}{\mathbf C}
+\newcommand{\Q}{\mathbf Q}
+\newcommand{\AJ}{\operatorname{AJ}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\ab}{\mathrm{ab}}
+\newcommand{\dR}{\mathrm{dR}}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\trans}{\mathsf T}
+
+\title{Jacobians and Abel--Jacobi Maps}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-2em}
+
+Let $X$ be a compact connected Riemann surface of genus $g\geq0$, with
+base point $x_0$ and its complex orientation. Homology is singular
+homology, $U^\vee=\Hom_{\C}(U,\C)$, and homomorphisms of complex tori
+are holomorphic group homomorphisms. Put
+\[
+ W=H^0(X,\Omega_X^1),\qquad V=W^\vee.
+\]
+
+\section{Homology}
+
+\begin{proposition}\label{prop:homology}
+There is a presentation
+\begin{equation}\label{eq:presentation}
+ \pi_1(X,x_0)\cong
+ \left\langle a_1,b_1,\ldots,a_g,b_g\ \middle|\
+   \prod_{j=1}^g[a_j,b_j]=1\right\rangle,
+ \qquad [a,b]=aba^{-1}b^{-1}.
+\end{equation}
+The Hurewicz map $h$ induces a canonical isomorphism
+\[
+ \pi_1(X,x_0)^{\ab}\xrightarrow{\sim}H_1(X,\Z),
+ \qquad H_1(X,\Z)\cong\Z^{2g}.
+\]
+The homology classes of the generators form a symplectic basis:
+\begin{equation}\label{eq:symplectic}
+ a_i\cdot a_j=b_i\cdot b_j=0,\qquad a_i\cdot b_j=\delta_{ij}.
+\end{equation}
+Moreover, $\pi_1(X,x_0)$ is trivial for $g=0$, is $\Z^2$ for $g=1$,
+and is nonabelian for $g\geq2$.
+\end{proposition}
+
+\begin{proof}
+The polygon decomposition has one vertex, $2g$ edges, and one face
+attached by $\prod_j[a_j,b_j]$; van Kampen gives
+\eqref{eq:presentation}. For $g=0$ use the sphere with one vertex and
+one face. If $F$ is the free group on the edges and $N$ is the normal
+closure of the relator, then $N\subseteq[F,F]$, so
+\[
+ (F/N)^{\ab}=F/(N[F,F])=F/[F,F]\cong\Z^{2g}.
+\]
+Degree-one Hurewicz identifies this quotient with $H_1(X,\Z)$.
+The standard oriented edge cycles have intersections
+\eqref{eq:symplectic}. For $g=1$ the relation is commutativity; for
+$g\geq2$ the quotient obtained by setting every $b_j=1$ is the
+nonabelian free group on $a_1,\ldots,a_g$.
+\end{proof}
+
+\section{Periods}
+
+Choose a compatible Riemannian metric and use
+$*dx=dy$, $*dy=-dx$ in a holomorphic coordinate $z=x+iy$. Set
+\[
+ \HH^1(X,\R)=\{\alpha\in\Omega^1(X,\R):d\alpha=d*\alpha=0\}.
+\]
+
+\begin{theorem}[Hodge]
+Every real de Rham class has a unique harmonic representative; thus
+$\HH^1(X,\R)\xrightarrow{\sim}H^1_{\dR}(X,\R)$.
+\end{theorem}
+
+\begin{lemma}\label{lem:realparts}
+The real-linear map
+\[
+ W_{\R}\xrightarrow{\sim}\HH^1(X,\R),\qquad
+ \omega\longmapsto\operatorname{Re}\omega
+\]
+has inverse $\alpha\mapsto\alpha+i*\alpha$. Consequently,
+\begin{equation}\label{eq:hodge}
+ \dim_{\C}W=g,\qquad
+ H^1_{\dR}(X,\C)\cong W\oplus\overline W.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For $\alpha=p\,dx+q\,dy$,
+\[
+ \alpha+i*\alpha=(p-iq)\,dz,
+ \qquad d\alpha=d*\alpha=0
+ \iff q_x-p_y=p_x+q_y=0.
+\]
+These are the Cauchy--Riemann equations for $p-iq$. Conversely, the real
+part of a holomorphic one-form satisfies these equations and recovers
+the form by $\alpha+i*\alpha$. Hodge theory and de Rham's theorem give
+$2\dim_{\C}W=\dim_{\R}H^1(X,\R)=2g$; complexifying the harmonic
+representatives gives the decomposition in \eqref{eq:hodge}.
+\end{proof}
+
+Holomorphic one-forms are closed. Integration therefore defines
+\begin{equation}\label{eq:period}
+ P:H_1(X,\Z)\longrightarrow V,\qquad
+ P(c)(\omega)=\int_c\omega,
+\end{equation}
+and its real-linear extension
+$P_{\R}:H_1(X,\R)\to V_{\R}$.
+
+\begin{definition}
+A \emph{full lattice} in a real vector space is the integral span of a
+real basis. A \emph{complex torus} is a quotient $U/\Gamma$, where $U$
+is a finite-dimensional complex vector space and $\Gamma$ is a full
+lattice in $U_{\R}$.
+\end{definition}
+
+\begin{theorem}\label{thm:lattice}
+The map $P_{\R}$ is an isomorphism. Hence $P$ is injective and
+\[
+ \Lambda_X=P(H_1(X,\Z))
+\]
+is a full lattice of rank $2g$ in $V$.
+\end{theorem}
+
+\begin{proof}
+If $P_{\R}(c)=0$, then
+\[
+ \int_c\operatorname{Re}\omega
+ =\operatorname{Re}\int_c\omega=0\qquad(\omega\in W).
+\]
+By Lemma~\ref{lem:realparts} and Hodge theory, these real parts represent
+all of $H^1_{\dR}(X,\R)$. Nondegeneracy of the de Rham pairing gives
+$c=0$. Both spaces have real dimension $2g$, so $P_{\R}$ is an
+isomorphism. If $c_1,\ldots,c_{2g}$ is an integral homology basis, then
+$P(c_1),\ldots,P(c_{2g})$ is a real basis of $V_{\R}$ and
+\[
+ \Lambda_X=\bigoplus_{j=1}^{2g}\Z P(c_j).
+\]
+Thus $\Lambda_X$ is discrete, and the compact parallelepiped
+$\{\sum_jt_jP(c_j):0\leq t_j\leq1\}$ surjects onto $V/\Lambda_X$.
+\end{proof}
+
+\begin{definition}
+The \emph{Jacobian} of $X$ is
+\begin{equation}\label{eq:jacobian}
+ J(X)=V/\Lambda_X
+ =H^0(X,\Omega_X^1)^\vee/P(H_1(X,\Z)).
+\end{equation}
+\end{definition}
+
+Lattice translations act freely and properly discontinuously by
+biholomorphisms. Hence $J(X)$ is a compact complex Lie group of complex
+dimension $g$, and $J(X)\cong\R^{2g}/\Z^{2g}$ as real manifolds after
+choosing an integral homology basis.
+
+\section{Abel--Jacobi Maps}
+
+\begin{definition}
+For $x\in X$, choose a piecewise smooth path $c$ from $x_0$ to $x$ and set
+\begin{equation}\label{eq:aj}
+ \AJ_{x_0}(x)=\left[\omega\longmapsto\int_c\omega\right]\in J(X).
+\end{equation}
+\end{definition}
+
+\begin{proposition}\label{prop:aj}
+The map $\AJ_{x_0}$ is well defined and holomorphic, with
+$\AJ_{x_0}(x_0)=0$. Under $T_{\AJ_{x_0}(x)}J(X)=V$,
+\begin{equation}\label{eq:daj}
+ d(\AJ_{x_0})_x(v)(\omega)=\omega_x(v).
+\end{equation}
+For another base point $y_0$,
+\[
+ \AJ_{y_0}(x)=\AJ_{x_0}(x)-\AJ_{x_0}(y_0).
+\]
+\end{proposition}
+
+\begin{proof}
+Two choices of $c$ differ by an integral cycle, so their integral
+functionals differ by an element of $\Lambda_X$. On a coordinate disk,
+holomorphic primitives give a holomorphic local lift to $V$ and imply
+\eqref{eq:daj}. Concatenation of paths gives the base-point formula.
+\end{proof}
+
+\begin{lemma}\label{lem:cover}
+For a complex torus $T=U/\Gamma$, the quotient $q:U\to T$ is a universal
+cover. Lifting based loops from $0$ defines an isomorphism
+\[
+ \delta_T:\pi_1(T,0)\xrightarrow{\sim}\Gamma,\qquad
+ [\gamma]\longmapsto\widetilde\gamma(1).
+\]
+\end{lemma}
+
+\begin{proof}
+The lattice action gives a covering and $U$ is contractible. Endpoints
+of lifted concatenations add. Each $\lambda\in\Gamma$ is realized by
+$t\mapsto q(t\lambda)$, and a lift with endpoint $0$ is a loop in the
+simply connected space $U$.
+\end{proof}
+
+\begin{theorem}\label{thm:abelianization}
+Writing $\delta=\delta_{J(X)}$, one has
+\begin{equation}\label{eq:main}
+ \delta\circ(\AJ_{x_0})_*=P\circ h.
+\end{equation}
+Thus $(\AJ_{x_0})_*$ is surjective and
+\[
+ \ker((\AJ_{x_0})_*)=[\pi_1(X,x_0),\pi_1(X,x_0)],\qquad
+ \pi_1(J(X),0)\cong\pi_1(X,x_0)^{\ab}.
+\]
+Moreover, $\AJ_{x_0}$ induces an isomorphism
+$H_1(X,\Z)\xrightarrow{\sim}H_1(J(X),\Z)$.
+\end{theorem}
+
+\begin{proof}
+For a based loop $\gamma:[0,1]\to X$, the lift of
+$\AJ_{x_0}\circ\gamma$ starting at zero is
+\[
+ \widetilde\gamma(t)(\omega)=\int_{\gamma|_{[0,t]}}\omega.
+\]
+Its endpoint is $P(h([\gamma]))$, proving \eqref{eq:main}.
+The assertions about fundamental groups follow from injectivity of $P$
+and degree-one Hurewicz. Abelianizing \eqref{eq:main} and using naturality
+of Hurewicz proves the homology assertion.
+\end{proof}
+
+\section{Universal Property}
+
+\begin{lemma}\label{lem:linear}
+For complex tori $T_i=U_i/\Gamma_i$,
+\[
+ \Hom(T_1,T_2)\cong
+ \{A\in\Hom_{\C}(U_1,U_2):A(\Gamma_1)\subseteq\Gamma_2\}.
+\]
+Also, $H^0(T_i,\Omega_{T_i}^1)=U_i^\vee$ via invariant one-forms.
+\end{lemma}
+
+\begin{proof}
+A homomorphism lifts uniquely to a holomorphic $A:U_1\to U_2$ with
+$A(0)=0$. The continuous map
+$(u,v)\mapsto A(u+v)-A(u)-A(v)$ takes values in $\Gamma_2$ and vanishes
+at $(0,0)$, so $A$ is additive. Hence $dA_u=dA_0$ and $A(u)=dA_0(u)$
+is complex-linear. It maps $\Gamma_1$ into $\Gamma_2$. Conversely, such
+a linear map descends to a homomorphism. The coefficients of the lift
+of a holomorphic one-form to $U_i$ are entire and $\Gamma_i$-periodic;
+they are bounded and thus constant by Liouville's theorem.
+\end{proof}
+
+\begin{theorem}\label{thm:universal}
+Under $H^0(J(X),\Omega_{J(X)}^1)=V^\vee=W$, the map
+\[
+ \AJ_{x_0}^*:H^0(J(X),\Omega_{J(X)}^1)\xrightarrow{\sim}W
+\]
+is the identity. For every complex torus $T$ and holomorphic map
+$f:X\to T$, there is a unique homomorphism $F:J(X)\to T$ such that
+\begin{equation}\label{eq:universal}
+ f(x)=f(x_0)+F(\AJ_{x_0}(x)).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The assertion on one-forms follows from \eqref{eq:daj}.
+After translating $f$, assume $f(x_0)=0$ and write $T=U/\Gamma$.
+Dualizing pullback of invariant forms gives
+\[
+ A=(f^*)^\vee:V\longrightarrow U,\qquad
+ \ell(A(v))=v(f^*\ell)\quad(\ell\in U^\vee).
+\]
+For a path $c$ from $x_0$, let $u_c$ be the endpoint of the lift of
+$f\circ c$ to $U$ starting at zero. Then
+\[
+ \ell\left(A\left(\omega\longmapsto\int_c\omega\right)\right)
+ =\int_c f^*\ell=\ell(u_c).
+\]
+For a loop, $u_c\in\Gamma$. Since $h$ is surjective, this implies
+$A(\Lambda_X)\subseteq\Gamma$. Lemma~\ref{lem:linear} gives a
+homomorphism $F:J(X)\to T$, and the same identity for an arbitrary
+path proves \eqref{eq:universal}.
+If $F_1,F_2$ give the factorization, their induced maps on fundamental
+groups agree after composition with $(\AJ_{x_0})_*$. This map is
+surjective by Theorem~\ref{thm:abelianization}, so the linear lifts of
+$F_1,F_2$ agree on $\Lambda_X$. The lattice spans $V_{\R}$, hence the
+lifts and the homomorphisms agree.
+\end{proof}
+
+\section{Polarization}
+
+Assume $g\geq1$ and choose the symplectic basis
+\eqref{eq:symplectic}.
+
+\begin{lemma}\label{lem:bilinear}
+For closed complex one-forms $\alpha,\beta$,
+\begin{equation}\label{eq:bilinear}
+ \int_X\alpha\wedge\beta
+ =\sum_{j=1}^g\left(
+ \int_{a_j}\alpha\int_{b_j}\beta
+ -\int_{b_j}\alpha\int_{a_j}\beta\right).
+\end{equation}
+For $0\neq\omega\in W$,
+\begin{equation}\label{eq:positivity}
+ \frac{i}{2}\int_X\omega\wedge\overline\omega>0.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+If $u_j,v_j$ are the cohomology classes dual to $a_j,b_j$, Poincar\'e
+duality gives $\int_Xu_i\smile u_j=\int_Xv_i\smile v_j=0$ and
+$\int_Xu_i\smile v_j=\delta_{ij}$. Expanding $[\alpha],[\beta]$ gives
+\eqref{eq:bilinear}. Locally,
+$\frac{i}{2}\omega\wedge\overline\omega=|f(z)|^2dx\wedge dy$
+for $\omega=f(z)\,dz$, proving \eqref{eq:positivity}.
+\end{proof}
+
+\begin{proposition}\label{prop:periodmatrix}
+There is a unique basis $\omega_1,\ldots,\omega_g$ of $W$ satisfying
+$\int_{a_j}\omega_i=\delta_{ij}$. For
+\[
+ \tau_{ij}=\int_{b_j}\omega_i,\qquad Y=\operatorname{Im}\tau,
+\]
+one has $\tau^{\trans}=\tau$ and $Y>0$. In the coordinates
+$v\mapsto(v(\omega_1),\ldots,v(\omega_g))^{\trans}$,
+\begin{equation}\label{eq:normalized}
+ \Lambda_X=\Z^g+\tau\Z^g,\qquad
+ J(X)\cong\C^g/(\Z^g+\tau\Z^g).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+If all $a$-periods of $\omega$ vanish, \eqref{eq:bilinear} gives
+$\int_X\omega\wedge\overline\omega=0$; thus $\omega=0$ by
+\eqref{eq:positivity}. Since $\dim_{\C}W=g$, the $a$-period map
+$W\to\C^g$ is an isomorphism. This gives the normalized basis and
+\eqref{eq:normalized}. Since $\omega_i\wedge\omega_j=0$,
+\eqref{eq:bilinear} gives $0=\tau_{ji}-\tau_{ij}$. For
+$\omega=\sum_i c_i\omega_i$ it gives
+\[
+ \frac{i}{2}\int_X\omega\wedge\overline\omega
+ =\overline c^{\trans}Yc>0\qquad(c\neq0),
+\]
+so $Y$ is positive definite.
+\end{proof}
+
+\begin{definition}
+A \emph{Riemann form} on a complex torus $U/\Gamma$ is an integral
+alternating form $E$ on $\Gamma$ whose real-bilinear extension satisfies
+\[
+ E(iu,iv)=E(u,v),\qquad E(u,iu)>0\quad(u\neq0).
+\]
+It defines a polarization, which is \emph{principal} if
+$\Gamma\to\Hom_{\Z}(\Gamma,\Z)$, $\lambda\mapsto E(\lambda,-)$,
+is an isomorphism.
+\end{definition}
+
+\begin{theorem}[Riemann's criterion]
+A complex torus is projective if and only if it admits a Riemann form.
+A projective complex torus is an abelian variety over $\C$.
+\end{theorem}
+
+\begin{theorem}\label{thm:polarization}
+The form
+\[
+ E(z,w)=\operatorname{Im}\bigl(\overline z^{\trans}Y^{-1}w\bigr)
+\]
+defines a canonical principal polarization on $J(X)$, characterized by
+\begin{equation}\label{eq:intersection}
+ E(P(c),P(d))=c\cdot d\qquad(c,d\in H_1(X,\Z)).
+\end{equation}
+Thus $J(X)$ is a principally polarized abelian variety.
+\end{theorem}
+
+\begin{proof}
+The positive definite Hermitian form
+$H(z,w)=\overline z^{\trans}Y^{-1}w$ is conjugate-linear in its first
+variable. Hence $E$ is alternating, $E(iz,iw)=E(z,w)$, and
+$E(z,iz)=H(z,z)>0$ for $z\neq0$. Writing $\tau=B+iY$, with
+$B^{\trans}=B$, gives
+\begin{align*}
+ E(m+\tau n,m'+\tau n')
+ &=(m+Bn)^{\trans}n'-n^{\trans}(m'+Bn')\\
+ &=m^{\trans}n'-n^{\trans}m'
+ \qquad(m,n,m',n'\in\Z^g).
+\end{align*}
+Thus $E$ is integral and has matrix
+$\mathsf S=\left(\begin{smallmatrix}0&I_g\\-I_g&0\end{smallmatrix}\right)$
+in the period basis. This matrix is unimodular, so the polarization is
+principal. The same computation gives \eqref{eq:intersection}, which
+also proves independence of the symplectic basis. Riemann's criterion
+gives projectivity.
+\end{proof}
+
+\section{Endomorphisms}
+
+Let $T=U/\Gamma$ have complex dimension $g$, and let $\mathcal I$ denote
+multiplication by $i$ on $U_{\R}=\Gamma\otimes_{\Z}\R$.
+
+\begin{proposition}\label{prop:endomorphisms}
+Restriction to $\Gamma$ identifies the endomorphism ring with
+\begin{align*}
+ \End(T)
+ &\cong\{A\in\End_{\C}(U):A(\Gamma)\subseteq\Gamma\}\\
+ &\cong\{u\in\End_{\Z}(\Gamma):
+       u_{\R}\mathcal I=\mathcal Iu_{\R}\}
+ \ \subseteq\ \End_{\Z}(\Gamma).
+\end{align*}
+After choosing a lattice basis, the last ring is $M_{2g}(\Z)$.
+In particular, $\End(T)$ is a free abelian group of finite rank at most
+$4g^2$.
+\end{proposition}
+
+\begin{proof}
+The first description is Lemma~\ref{lem:linear}. A real-linear map is
+complex-linear exactly when it commutes with $\mathcal I$. Since
+$\Gamma$ spans $U_{\R}$, restriction is injective. A subgroup of the
+free abelian group $M_{2g}(\Z)$ is free of rank at most $4g^2$.
+\end{proof}
+
+\begin{proposition}
+For a principally polarized torus $(T,E)$, its polarization-preserving
+automorphisms correspond, in a symplectic lattice basis, to
+\[
+ \Aut(T,E)\cong
+ \{M\in M_{2g}(\Z):M_{\R}\mathcal I=\mathcal I M_{\R},\
+                  M^{\trans}\mathsf S M=\mathsf S\}.
+\]
+For each $n\in\Z$, multiplication by $n$ belongs to $\End(T)$ and
+satisfies $E(n\lambda,n\mu)=n^2E(\lambda,\mu)$.
+\end{proposition}
+
+\begin{proof}
+The first equation is the complex-linearity condition in
+Proposition~\ref{prop:endomorphisms}; the second is preservation of $E$.
+The latter gives an integral inverse
+$M^{-1}=\mathsf S^{-1}M^{\trans}\mathsf S$, so the induced map is an
+automorphism. The assertion about multiplication follows from
+bilinearity.
+\end{proof}
+
+\begin{example}\label{ex:elliptic}
+For $\operatorname{Im}\tau>0$, set $E_\tau=\C/(\Z+\tau\Z)$. Then
+\[
+ \End(E_\tau)=\{\alpha\in\C:
+       \alpha(\Z+\tau\Z)\subseteq\Z+\tau\Z\},
+\]
+and
+\[
+ \End(E_\tau)\neq\Z
+ \iff \tau\text{ is imaginary quadratic over }\Q.
+\]
+In particular,
+\[
+ \End(E_i)=\Z[i],\qquad \End(E_{\,i\sqrt[4]{2}})=\Z,
+ \qquad \pi_1(E_i)\cong\pi_1(E_{\,i\sqrt[4]{2}})\cong\Z^2.
+\]
+\end{example}
+
+\begin{proof}
+A complex-linear endomorphism of $\C$ is multiplication by a scalar
+$\alpha$. The lattice condition is equivalent to
+\[
+ \alpha=a+b\tau,\qquad \alpha\tau=c+d\tau,
+ \qquad a,b,c,d\in\Z,
+\]
+and hence to
+\begin{equation}\label{eq:quadratic}
+ b\tau^2+(a-d)\tau-c=0.
+\end{equation}
+If $\tau$ is not imaginary quadratic, the polynomial must vanish
+identically: $b=c=0$, $a=d$, so $\alpha\in\Z$. Conversely, if
+$A\tau^2+B\tau+C=0$ with integers $A\neq0,B,C$, then multiplication
+by $A\tau$ preserves the lattice and is not integer multiplication.
+Thus the exceptional parameters form a countable set.
+For $\tau=i$, the lattice is $\Z[i]$ and its scalar multiplier ring is
+$\Z[i]$. For $\tau=i\sqrt[4]{2}$, \eqref{eq:quadratic} gives
+$a=d$ and $b\sqrt2+c=0$, so $b=c=0$.
+\end{proof}
+
+\section{Low Genus}
+
+\begin{proposition}
+If $g=0$, then $J(X)$ is a point. If $g=1$, then
+$\AJ_{x_0}:X\to J(X)$ is a biholomorphism. If $g\geq2$, then
+$\AJ_{x_0}$ is not a homotopy equivalence.
+\end{proposition}
+
+\begin{proof}
+For $g=0$, $W=0$. For $g=1$, Theorem~\ref{thm:universal} implies that
+$\AJ_{x_0}$ is nonconstant, so it is a surjective holomorphic map of
+positive degree. By Theorem~\ref{thm:abelianization}, its pullback on
+integral $H^1$ is an isomorphism. Choose $\alpha,\beta\in H^1(J(X),\Z)$
+with $\langle\alpha\smile\beta,[J(X)]\rangle=1$. Their pullbacks form
+an integral basis of $H^1(X,\Z)$, so
+\[
+ \deg(\AJ_{x_0})
+ =\left\langle\AJ_{x_0}^*\alpha\smile\AJ_{x_0}^*\beta,[X]\right\rangle
+ =\pm1.
+\]
+Positivity gives degree one. Positive local multiplicities then imply
+that the map is bijective and unramified, hence biholomorphic.
+For $g\geq2$, $\pi_1(X,x_0)$ is nonabelian whereas
+$\pi_1(J(X),0)\cong\Z^{2g}$.
+\end{proof}
+
+For $X=E_\tau$ and $x_0=[0]$, the form $dz$ identifies $V$ with $\C$;
+its period lattice is $\Z+\tau\Z$ and $\AJ_0([z])=[z]$.
+
+\begin{thebibliography}{9}
+\bibitem{hatcher}
+A. Hatcher, \emph{Algebraic Topology}, Cambridge University Press, 2002.
+\href{https://pi.math.cornell.edu/~hatcher/AT/ATpage.html}{Online edition}.
+
+\bibitem{forster}
+O. Forster, \emph{Lectures on Riemann Surfaces}, translated by B. Gilligan,
+Graduate Texts in Mathematics 81, Springer, 1981.
+
+\bibitem{milneav}
+J. S. Milne, \emph{Abelian Varieties}, course notes, version 2.00, 2008.
+\href{https://www.jmilne.org/math/CourseNotes/AV.pdf}{Online notes}.
+
+\bibitem{milnejv}
+J. S. Milne, \emph{Jacobian Varieties}, in \emph{Arithmetic Geometry},
+G. Cornell and J. H. Silverman, eds., Springer, 1986, pp.~167--212.
+\href{https://www.jmilne.org/math/xnotes/JVs.html}{Revised online edition}.
+\end{thebibliography}
+
+\end{document}
