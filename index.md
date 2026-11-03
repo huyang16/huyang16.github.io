@@ -3,7 +3,7 @@ layout: home
 permalink: /
 title: "Yang Hu's Website"
 description: "Yang Hu's mathematics homepage: writings, research, and academic activities."
-email: yanghumath2004@outlook.com
+email: hu000841@umn.edu
 cv: assets/Yang_Hu_CV.pdf
 updated: November 3, 2026
 ---
