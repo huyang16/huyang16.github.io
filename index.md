@@ -41,8 +41,6 @@ Jump to:
 
 - [Notes on local theta correspondence.](/assets/Notes_on_Local_Theta_Correspondence.pdf) Expository notes from reading with Prof. Dihua Jiang.
 
-- [Jacobians and Abel–Jacobi maps.](/assets/Jacobians_and_Abel_Jacobi_Maps.pdf)
-
 - {: #period-rings} [Period rings.](https://drive.google.com/file/d/1C9g1qAAOBA9MCHdIpE2mCjM28UX_oNui/view?usp=sharing) Short wrap-up notes from the Berkeley Directed Reading Program, Fall 2025, on the construction of de Rham and crystalline period rings.
 
 - [A note on an interesting Lemma](/assets/Hartogs_Lemma_Completed.pdf)
