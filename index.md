@@ -5,7 +5,7 @@ title: "Yang Hu's Website"
 description: "Yang Hu's mathematics homepage: writings, research, and academic activities."
 email: hu000841@umn.edu
 cv: assets/Yang_Hu_CV.pdf
-updated: November 3, 2026
+updated: November 14, 2026
 ---
 
 # Yang Hu (<span lang="zh-Hans" style="font-family: SimSun, 'Songti SC', STSong, 'Noto Serif CJK SC', serif; font-weight: normal;">胡洋</span>)
@@ -68,6 +68,8 @@ Jump to:
 ## Activities
 
 Selected seminars, conferences, and summer schools attended.
+
+- **Undergraduate Mathematics Symposium.** University of Illinois Chicago, November 14, 2026. Poster presentation: *Oscillator Semigroups over Finite Fields*. This is my [poster](/assets/Yang_Hu_UIC_UMS_2026_Poster.pdf).
 
 - [Arithmetic and Algebraic Geometry Bootcamp.](https://ashankar91.github.io/aag-bootcamp-2026/index.html) Northwestern University, Evanston, Illinois, August 17–21, 2026. [Notes](#abelian-finite-fields).
 
