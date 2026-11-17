@@ -5,7 +5,7 @@ title: "Yang Hu's Website"
 description: "Yang Hu's mathematics homepage: writings, research, and academic activities."
 email: hu000841@umn.edu
 cv: assets/Yang_Hu_CV.pdf
-updated: November 14, 2026
+updated: November 17, 2026
 ---
 
 # Yang Hu (<span lang="zh-Hans" style="font-family: SimSun, 'Songti SC', STSong, 'Noto Serif CJK SC', serif; font-weight: normal;">胡洋</span>)
@@ -14,7 +14,7 @@ updated: November 14, 2026
 
 ## CV
 
-<p style="font-style: normal;">This is my <a href="{{ page.cv | relative_url }}?v=beeab9597bbc" style="font-style: normal; text-decoration: underline;">CV</a></p>
+<p style="font-style: normal;">This is my <a href="{{ page.cv | relative_url }}?v=daa2b5e9ac47" style="font-style: normal; text-decoration: underline;">CV</a></p>
 
 I am interested in representation theory and its connections with number theory and algebraic geometry.
 
@@ -55,7 +55,7 @@ Jump to:
 
 ## Research
 
-- **Oscillator semigroups over finite fields: irreducible representations and restrictions.** Working draft.
+- **Oscillator centralizer over finite field: Irreducible representations and branching.** Preprint, 2026.
 
   Motivated by Howe's classification and restriction problems, we study the irreducible representations of centralizer semigroups in the oscillator semigroup over finite fields of odd characteristic, together with their restrictions to classical groups. We realize these restrictions as images of standard-module pairing operators and analyze them using Harish-Chandra induction and Hecke algebras of types A and BC. These constructions yield explicit restriction formulas and connect the semigroup representations with finite-field theta correspondence.
 
